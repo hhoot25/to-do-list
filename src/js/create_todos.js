@@ -10,3 +10,7 @@ class Todo{
 
     }
 }
+
+export function createTodo(){
+    console.log("todo created");
+}
