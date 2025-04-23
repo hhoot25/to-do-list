@@ -1,10 +1,9 @@
 //used to create todos
 
-class Todo{
-    constructor(title, description, dueDate, priority){
+export class Todo{
+    constructor(title, description, priority){
         this.title = title;
         this.description = description;
-        this.dueDate = dueDate;
         this.priority = priority;
 
 
@@ -12,5 +11,7 @@ class Todo{
 }
 
 export function createTodo(){
-    console.log("todo created");
+    
+
+
 }
