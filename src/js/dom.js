@@ -1,5 +1,9 @@
 import {Todo, Project} from './classes.js'
 
+const TodoContainer = document.querySelector('#TodoContainer');
+const ProjectContainer = document.querySelector('#ProjectContainer');
+const bar = document.querySelector('#bar');
+
 
 
 const defaultProject = new Project("Default Project");
@@ -17,14 +21,41 @@ personalProject.addTodo(new Todo("Workout", "Go to the gym for 1 hour", "2023-10
 // Export placeholder projects
 export const placeholderProjects = [defaultProject, workProject, personalProject];
 
-export function displayProject(project){
+
+export function displayProjects(){
+    placeholderProjects.forEach((project) => {
+        const ProjBtn = document.createElement('button');
+        ProjBtn.classList.add('project');
+
+        ProjBtn.innerHTML = `${project.name}`;
+        
+        ProjectContainer.appendChild(ProjBtn);
+    });
+
+}
+
+
+export function displayProjectTodos(project){
+
+
     project.todos.forEach((todo) => {
-        console.log(`the title is ${todo.title}`);
+        displayTodo(todo);
 
     });
 
 }
 
-export function displayTodos(){
+export function displayTodo(todo){
+    const block = document.createElement('div');
+    block.classList.add('todo');
+
+    const title = document.createTextNode(`${todo.title}`);
+
+    const dueDate = document.createTextNode(`${todo.dueDate}`);
+
+    block.appendChild(title);
+    block.appendChild(dueDate);
+
+    TodoContainer.appendChild(block);
 
 }

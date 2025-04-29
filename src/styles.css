@@ -20,3 +20,12 @@ body{
     flex-grow:.3;
     background-color:pink;
 }
+
+.todo{
+    height:100px;
+    width:100px;
+    background-color:blueviolet;
+}
+
+
+

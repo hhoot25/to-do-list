@@ -1,8 +1,11 @@
 import "../styles.css";
 import {Card,Projects} from "./classes.js"
-import {displayProject, placeholderProjects} from "./dom.js"
+import {displayProjectTodos, displayProjects, placeholderProjects} from "./dom.js"
 
-displayProject(placeholderProjects[1]);
+
+displayProjects();
+
+displayProjectTodos(placeholderProjects[1]);
 
 
 
