@@ -1,6 +1,7 @@
 import "../styles.css";
-import {Card,Projects} from "./classes.js"
-import {displayProjectTodos, displayProjects, placeholderProjects} from "./dom.js"
+import {Card,Projects, placeholderProjects} from "./classes.js"
+import {displayProjectTodos, displayProjects} from "./dom.js"
+import "./form.js"
 
 
 displayProjects();

@@ -9,18 +9,46 @@
     
     <div id="bar">
         <h1>Projects</h1>
-        <div id="default-project">
-            Default
-        </div>
-        <button>add project</button>
+        <button id="addTodoBtn">add tasks</button>
+        <button id="addProject">add project</button>
         <div id="ProjectContainer"></div>
     </div>
     <div id="content">
         <h1>Tasks</h1>
-        <button>add tasks</button>
+        
 
         <div id="TodoContainer"></div>
     </div>
+
+    <!--Pop up form-->
+    <dialog id="todoDialog">
+        <form id="todoForm">
+            <p>
+                <label for="title">Title</label>
+                <input name="title" type="text">
+            </p>
+            <p>
+                <label for="description">Description</label>
+                <input name="description" type="text">
+            </p>
+            <p>
+                <label for="DueDate">DueDate</label>
+                <input name="dueDate" type="text">
+            </p>
+            <p>
+                <label for="priority">Priority</label>
+                <select name="priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </p>
+            <div>
+                <button value="cancel" formmethod="dialog">Cancel</button>
+                <button id="todoConfirmBtn" value="default">Confirm</button>
+            </div>
+        </form>
+    </dialog>
 
 </body>
 </html>

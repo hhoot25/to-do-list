@@ -23,7 +23,7 @@ export class Project {
 }
 
 //placeholder project
-const defaultProject = new Project("Default Project");
+const defaultProject = new Project("default");
 defaultProject.addTodo(new Todo("Task 1", "Description for Task 1", "2023-10-01", "High"));
 defaultProject.addTodo(new Todo("Task 2", "Description for Task 2", "2023-10-02", "Low"));
 
