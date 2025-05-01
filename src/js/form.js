@@ -1,6 +1,6 @@
 import{Todo, Project, placeholderProjects} from './classes.js'
 import{currentProjName, displayProjectTodos} from './dom.js'
-
+import{populateStorage} from './storage.js'
 
 
 
@@ -42,5 +42,7 @@ todoConfirmBtn.addEventListener("click",(event)=>{
 
 todoDialog.addEventListener("close", ()=>{
     console.log(`added ${todoDialog.returnValue}`);
+
+    populateStorage(placeholderProjects);
 });
 

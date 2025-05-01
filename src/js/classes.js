@@ -36,5 +36,5 @@ personalProject.addTodo(new Todo("Grocery shopping", "Buy vegetables and fruits"
 personalProject.addTodo(new Todo("Workout", "Go to the gym for 1 hour", "2023-10-04", "Medium"));
 
 // Export placeholder projects
-export const placeholderProjects = [defaultProject, workProject, personalProject];
+export let placeholderProjects = [defaultProject, workProject, personalProject];
 
